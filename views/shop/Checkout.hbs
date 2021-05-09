@@ -1,0 +1,57 @@
+<div class="row">
+    <div class="col-md-6 col-sm-4 col-md-offset-4 col-sm-offset-3 ">
+        <h1>CheckOut</h1>
+        <h4>Your Total:{{totalPrice}} </h4>
+        <form action="/checkout" method="POST" id="Checkout-form">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="form-group">
+                        <label for="email">Name</label>
+                        <input type="text" id="name" name="name" class="form-control">
+                    </div>
+                </div>
+                <div class="col-xs-12">
+                    <div class="form-group">
+                        <label for="email">Address</label>
+                        <input type="text" id="address" name="address" class="form-control">
+                    </div>
+                </div>
+                <div class="col-xs-12">
+                    <div class="form-group">
+                        <label for="email">Card Holder Name</label>
+                        <input type="text" id="card-name" name="card-name" class="form-control">
+                    </div>
+                </div>
+                <div class="col-xs-12">
+                    <div class="form-group">
+                        <label for="email">Card Number</label>
+                        <input type="text" id="credit-number" name="credit-number" class="form-control">
+                    </div>
+                </div>
+                <div class="col-xs-12">
+                    <div class="row">
+                        <div class="col-xs-6">
+                                <div class="form-group">
+                                <label for="email">ExpiryMonth</label>
+                                <input type="text" id="expiry-month" name="expiry-month" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-xs-6">
+                                <div class="form-group">
+                                <label for="email">ExpiryYear</label>
+                                <input type="text" id="expiry-year" name="expiry-year" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12">
+                    <div class="form-group">
+                        <label for="email">CVC</label>
+                        <input type="text" id="cvc" name="cvc" class="form-control">
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-success">Buy Now</button>
+        </form>
+    </div>
+</div>
